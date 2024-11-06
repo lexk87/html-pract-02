@@ -1,0 +1,106 @@
+/* VARIABLES */
+:root {
+    --accent-color: #0D8701;
+    --bg-primary-color: #ffffff;
+    --bg-secondary-color: #f5f4fa;
+    --footer-bg-color: #000000;
+    --header-logo-color: #000000;
+    --footer-logo-color: #ffffff;
+    --footer-txt-color: #ffffff;
+    --heading-color: #000000;
+    --hero-heading-color: #ffffff;
+    --main-txt-color: #757575;
+    --hero-btn-color: #ffffff;
+    --hero-btn-bg-hover-color: #074E00;
+
+}
+
+/* HIDE ELEMENT */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* RESET STYLES */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* BUTTONS */
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+}
+
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+}
+
+/* LOGO */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+}
+
+.logo:hover > .header__logo,
+.logo:focus > .header__logo,
+.logo:hover > .footer__logo,
+.logo:focus > .footer__logo {
+    color: var(--accent-color);
+}
+
+.header__logo {
+    color: var(--header-logo-color);
+}
+
+.footer__logo {
+    color: var(--footer-logo-color);
+}
+
+/* HEADER */
+.links-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--heading-color);
+}
+
+.links-list__link:hover,
+.links-list__link:focus,
+.active-link {
+    color: var(--accent-color);
+}
+
+.contacts-list__link {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-color);
+}
+
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+    color: var(--accent-color);
+}
